@@ -1,0 +1,41 @@
+/* ---------- tag selectors ---------- */
+body{
+  background-color: #f0ece3;
+}
+
+h1{
+  background-color: #596e79;
+  margin: 10px 0px;
+  padding: 10px 10px;
+  color: #f0ece3;
+}
+
+table{
+  padding: 10px 10px;
+}
+
+hr{
+  
+  border: 0px;
+  border-top: 10px dotted gray;
+  margin: 25px auto;
+  width: 200px;
+}
+
+/* ---------- id selectors ---------- */
+#mainContainer{
+  background-color: #c7b198;
+  margin: 200px 100px 10px 10px;
+  /* padding: 5px 50px; */
+  width: 50%;
+  
+}
+
+
+/* ---------- class selectors ---------- */
+.container{
+
+  margin: 10px 10px;
+  padding: 10px 100px;
+  /* width: 50%;  */
+}
