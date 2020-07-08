@@ -22,14 +22,14 @@ cookAnswer = cookAnswer.toLowerCase();
 if(cookAnswer === 'y' || cookAnswer === 'yes'){
   alert('Correct!');
   counter++;
-  console.log('Q: like to cook food?');
-  console.log('Answer: ' + cookAnswer + ' is Correct!');
-  console.log('');
+  // console.log('Q: like to cook food?');
+  // console.log('Answer: ' + cookAnswer + ' is Correct!');
+  // console.log('');
 } else{
   alert('Wrong!');
-  console.log('Q: like to cook food?');
-  console.log('Answer: ' + cookAnswer + ' is Wrong!');
-  console.log('');
+  // console.log('Q: like to cook food?');
+  // console.log('Answer: ' + cookAnswer + ' is Wrong!');
+  // console.log('');
 }
 
 
@@ -43,14 +43,14 @@ foodSushi = foodSushi.toLowerCase();
 if(foodSushi === 'n' || foodSushi === 'no'){
   alert('Correct!');
   counter++;
-  console.log('Q: I don\'t like sushi?');
-  console.log('Answer: ' + foodSushi + ' is Correct!');
-  console.log('');
+  // console.log('Q: I don\'t like sushi?');
+  // console.log('Answer: ' + foodSushi + ' is Correct!');
+  // console.log('');
 } else{
   alert('Wrong!');
-  console.log('Q: I don\'t like sushi?');
-  console.log('Answer: ' + foodSushi + ' is Wrong!');
-  console.log('');
+  // console.log('Q: I don\'t like sushi?');
+  // console.log('Answer: ' + foodSushi + ' is Wrong!');
+  // console.log('');
 }
 
 
@@ -64,14 +64,14 @@ foodAdobo = foodAdobo.toLowerCase();
 if(foodAdobo === 'y' || foodAdobo === 'yes'){
   alert('Correct!');
   counter++;
-  console.log('Q: I like adobo?');
-  console.log('Answer: ' + foodAdobo + ' is Correct!');
-  console.log('');
+  // console.log('Q: I like adobo?');
+  // console.log('Answer: ' + foodAdobo + ' is Correct!');
+  // console.log('');
 } else{
   alert('Wrong!');
-  console.log('Q: I like adobo?');
-  console.log('Answer: ' + foodAdobo + ' is Wrong!');
-  console.log('');
+  // console.log('Q: I like adobo?');
+  // console.log('Answer: ' + foodAdobo + ' is Wrong!');
+  // console.log('');
 }
 
 
@@ -85,14 +85,14 @@ placeJapan = placeJapan.toLowerCase();
 if(placeJapan === 'n' || placeJapan === 'no'){
   alert('Correct!');
   counter++;
-  console.log('Q: I\'ve never been to Japan?');
-  console.log('Answer: ' + placeJapan + ' is Correct!');
-  console.log('');
+  // console.log('Q: I\'ve never been to Japan?');
+  // console.log('Answer: ' + placeJapan + ' is Correct!');
+  // console.log('');
 } else{
   alert('Wrong!');
-  console.log('Q: I\'ve never been to Japan?');
-  console.log('Answer: ' + placeJapan + ' is Wrong!');
-  console.log('');
+  // console.log('Q: I\'ve never been to Japan?');
+  // console.log('Answer: ' + placeJapan + ' is Wrong!');
+  // console.log('');
 }
 
 
@@ -106,14 +106,14 @@ actSkyDive = actSkyDive.toLowerCase();
 if(actSkyDive === 'y' || actSkyDive === 'yes'){
   alert('Correct!');
   counter++;
-  console.log('Q: Do you think I\'ve done skydiving before?');
-  console.log('Answer: ' + actSkyDive + ' is Correct!');
-  console.log('');
+  // console.log('Q: Do you think I\'ve done skydiving before?');
+  // console.log('Answer: ' + actSkyDive + ' is Correct!');
+  // console.log('');
 } else{
   alert('Wrong!');
-  console.log('Q: Do you think I\'ve done skydiving before?');
-  console.log('Answer: ' + actSkyDive + ' is Wrong!');
-  console.log('');
+  // console.log('Q: Do you think I\'ve done skydiving before?');
+  // console.log('Answer: ' + actSkyDive + ' is Wrong!');
+  // console.log('');
 }
 
 
