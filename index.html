@@ -10,29 +10,38 @@
 
    <div id="mainContainer">
 
-      <!-- biography -->
-      <div class="container">
-        <h1>Biography</h1>
+      <div id="firstDiv">
 
-          <p>
+        <h1 id="fullName"> Darius Lee Pasilaban</h1>
+
+      </div>
+
+      <!-- biography -->
+      <div class="contents">
+
+        <img src="me.png" id="profilePic">
+
+        <h1 class="label">Biography</h1>
+
+          <p id="pBio">
 
             Hello! I'm Darius. I'm a Filipino-American who was born in Japan🇯🇵🏯⛩, raised in the Philippines🇵🇭🏖⛰ and currently lives in the US🇺🇸🌁🌆. I like the outdoors and travelling. I like to cook, bake and eat food. I'm a pretty good cook too!🙃 A few food/dishes I like are adobo, sushi and tacos. Fun fact: I've done skydiving @ 13,000 ft! Get to know more about me by reading some more information below.
 
           </p>
         </div>
       
-  <hr>
+
 
     <!-- education -->
-    <div class="container">
+    <div class="contents">
 
-      <h1>Education</h1>
+      <h1 class="label">Education</h1>
 
-      <table>
+      <!-- <table>
         <tr>
-          <td><strong>School</strong></td>
-          <td><strong>Degree<strong></td>
-          <td><strong>Year</strong></td>
+          <th><strong>School</strong></th>
+          <th><strong>Degree<strong></th>
+          <th><strong>Year</strong></th>
         </tr>
         <tr>
           <td>Informatics College Manila</td>
@@ -44,22 +53,33 @@
           <td>High School</td>
           <td>2009</td>
         </tr>
-      </table>
+      </table> -->
+
+      <ul>
+        <li class="educLabel">Undergraduate</li>
+          <ul>
+            <li>Informatics College Manila - Bachelor of Science in IT (2014)</li>
+          </ul>
+        <li  class="educLabel">Certification</li>
+          <ul>
+            <li>Code Fellows - Certificate - Advanced Software Development in Full-Stack Javascript (2020)</li>
+          </ul>
+      </ul>
 
     </div>
 
-    <hr>
+    
 
   <!-- overview of job experience -->
     
-  <div class="container">
-    <h1>Job Experience</h1>
+  <div class="contents">
+    <h1 class="label">Job Experience</h1>
 
-    <table>
+    <!-- <table class="tables">
       <tr>
-        <td><strong>Company/Organization</strong></td>
-        <td><strong>Position</strong></td>
-        <td><strong>Year</strong></td>
+        <th><strong>Company/Organization</strong></th>
+        <th><strong>Position</strong></th>
+        <th><strong>Year</strong></th>
       </tr>
       <tr>
         <td>Tucson Electric Power</td>
@@ -71,19 +91,31 @@
         <td>Weather Technician</td>
         <td>2009</td>
       </tr>
-    </table>
+    </table> -->
+
+    <ul>
+      <li class="jobLabel">Weather Technician</li>
+        <ul>
+          <li>Davis-Monthan Air Force Base (May 2015 - May2020)</li>
+        </ul>
+      <li  class="jobLabel">Military Intern - Web Development</li>
+        <ul>
+          <li>Tucson Electric Power (Nov 2019 - Apr 2020)</li>
+        </ul>
+    </ul>
+
   </div>
 
-  <hr>
+
 
     <!-- goals -->
-    <div class="container">
-        <h1>Goals</h1>
+    <div class="contents">
+        <h1 class="label">Goals</h1>
 
-        <table>
+        <table class="tables">
           <tr>
-            <td><strong>Goals</strong></td>
-            <td><strong>Deadline</strong></td>
+            <th><strong>Goals</strong></th>
+            <th><strong>Deadline</strong></th>
           </tr>
           <tr>
             <td>Travel to 50 countries</td>
@@ -96,8 +128,35 @@
         </table>    
       </div>
 
-    </div>
+  <!-- TOP 10 PLACES TO VISIT -->
+
+      <div class="contents">
+        
+          
+
+          <h1 id="top10Label">Top 10 places to visit</h1>
+
+        <div id="top10">
+
+          <ol>
+            <li>Portugal</li>
+            <li>Spain</li>
+            <li>Indonesia</li>
+            <li>Thailand</li>
+            <li>Iceland</li>
+            <li>Australia</li>
+            <li>Germany</li>
+            <li>Netherlands</li>
+            <li>India</li>
+            <li>South Korea</li>
+          </ol>
+
+        </div>
+
+      </div>
+
+   </div>
   
-    <script src="js/app.js"></script>
+    <!-- <script src="js/app.js"></script> -->
   </body>
 </html>
