@@ -93,7 +93,7 @@ function doesDariusLikeAdobo(){
 doesDariusLikeAdobo();
 
 // Refactoring to function
-function hasDariusBeenToJapan() {
+function hasDariusBeenToJapan(){
   // ----- 4TH QUESTION -----
   var placeJapan = prompt('Q4: I\'ve never been to Japan?(y/n)');
   // add validation
@@ -116,26 +116,29 @@ function hasDariusBeenToJapan() {
 
 hasDariusBeenToJapan();
 
+// Refactoring to function
+function hasDariusSkydived(){
+  // ----- 5TH QUESTION -----
+  var actSkyDive = prompt('Q5: Do you think I\'ve done skydiving before?(y/n)');
+  // add validation
 
-// ----- 5TH QUESTION -----
-var actSkyDive = prompt('Q5: Do you think I\'ve done skydiving before?(y/n)');
-// add validation
+  actSkyDive = actSkyDive.toLowerCase();
 
-actSkyDive = actSkyDive.toLowerCase();
+  if(actSkyDive === 'y' || actSkyDive === 'yes'){
+    alert('Correct!');
+    counter++;
+    // console.log('Q: Do you think I\'ve done skydiving before?');
+    // console.log('Answer: ' + actSkyDive + ' is Correct!');
+    // console.log('');
+  } else{
+    alert('Wrong!');
+    // console.log('Q: Do you think I\'ve done skydiving before?');
+    // console.log('Answer: ' + actSkyDive + ' is Wrong!');
+    // console.log('');
+  }
+};
 
-if(actSkyDive === 'y' || actSkyDive === 'yes'){
-  alert('Correct!');
-  counter++;
-  // console.log('Q: Do you think I\'ve done skydiving before?');
-  // console.log('Answer: ' + actSkyDive + ' is Correct!');
-  // console.log('');
-} else{
-  alert('Wrong!');
-  // console.log('Q: Do you think I\'ve done skydiving before?');
-  // console.log('Answer: ' + actSkyDive + ' is Wrong!');
-  // console.log('');
-}
-
+hasDariusSkydived();
 
 
 // ----- 6TH QUESTION -----
