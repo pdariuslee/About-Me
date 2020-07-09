@@ -27,6 +27,11 @@ ol{
   align-content: center;
 }
 
+ul{
+  list-style-type: circle;
+  align-content: center;
+}
+
 /* ----------------- id selectors ------------------- */
 #mainContainer{
   /* border: 5px dotted red; */
