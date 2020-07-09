@@ -4,7 +4,7 @@ var userName = prompt('Hello! What\'s your name?');
 
 alert('Welcome ' + userName + " to my \"About Me Page\"");
 
-alert("Let's see how much you read/know about me");
+alert("Let's see how much you know about me");
 
 // -------------------------------- NOTES -------------------------------------
 // prompt user with 5 yes or no questions
@@ -14,7 +14,7 @@ alert("Let's see how much you read/know about me");
 var counter = 0;
 
 // ----- 1ST QUESTION -----
-var cookAnswer = prompt('I like to cook food?(y/n)');
+var cookAnswer = prompt('Q1: I like to cook food?(y/n)');
 // add validation
 
 cookAnswer = cookAnswer.toLowerCase();
@@ -35,7 +35,7 @@ if(cookAnswer === 'y' || cookAnswer === 'yes'){
 
 
 // ----- 2ND QUESTION -----
-var foodSushi = prompt('I don\'t like sushi?(y/n)');
+var foodSushi = prompt('Q2: I don\'t like sushi?(y/n)');
 // add validation
 
 foodSushi = foodSushi.toLowerCase();
@@ -56,7 +56,7 @@ if(foodSushi === 'n' || foodSushi === 'no'){
 
 
 // ----- 3RD QUESTION -----
-var foodAdobo = prompt('I like adobo?(y/n)');
+var foodAdobo = prompt('Q3: I ❤️ Adobo?(y/n)');
 // add validation
 
 foodAdobo = foodAdobo.toLowerCase();
@@ -77,7 +77,7 @@ if(foodAdobo === 'y' || foodAdobo === 'yes'){
 
 
 // ----- 4TH QUESTION -----
-var placeJapan = prompt('I\'ve never been to Japan?(y/n)');
+var placeJapan = prompt('Q4: I\'ve never been to Japan?(y/n)');
 // add validation
 
 placeJapan = placeJapan.toLowerCase();
@@ -98,7 +98,7 @@ if(placeJapan === 'n' || placeJapan === 'no'){
 
 
 // ----- 5TH QUESTION -----
-var actSkyDive = prompt('Do you think I\'ve done skydiving before?(y/n)');
+var actSkyDive = prompt('Q5: Do you think I\'ve done skydiving before?(y/n)');
 // add validation
 
 actSkyDive = actSkyDive.toLowerCase();
@@ -117,5 +117,45 @@ if(actSkyDive === 'y' || actSkyDive === 'yes'){
 }
 
 
+
+// ----- 6TH QUESTION -----
+var sixthAnswer = 0;
+for(var triesLeft = 4; triesLeft != 0; triesLeft--){
+  sixthAnswer = prompt('Q6: Number of countries I have been so far?' + ' try left: ' + triesLeft);
+  if(sixthAnswer === 4 || sixthAnswer === '4'){
+    var triesLeft = 1;  
+    alert('Wow! You\'re amazing');
+    counter++;
+  } else if(sixthAnswer > 4){
+    alert('Wrong! It\'s Lower');
+  } else if(sixthAnswer < 4){
+    alert('Wrong! It\'s Higher');
+  }  
+}
+
+// console.log('Number of countries I have been so far? Answer: 4');
+alert('Correct answer is 4');
+
+
+// ----- 7TH QUESTION -----
+    var countriesIveBeen = ['philippines', 'japan', 'mexico', 'united states'];
+    var triesLeft = 6;
+   
+    for(var attempt = 1; attempt <= 6; attempt++){
+        var answer = prompt('Q7: Been to 4 countries so far. Guess at least one! Tries left: ' + triesLeft).toLowerCase();
+
+        if(answer === countriesIveBeen[0] || answer === countriesIveBeen[1] || answer === countriesIveBeen[2] || answer === countriesIveBeen[3]){
+            alert('Correct!');
+            counter++;
+            attempt = 6;
+        } else{
+            triesLeft--;
+            alert('try again! tries left: ' + triesLeft);
+        }
+    }
+   
+    // console.log('So far I have been to: Philippines,' + ' Japan,' + ' Mexico,' + '  United States.');
+    alert('So far I have been to: Philippines,' + ' Japan,' + ' Mexico,' + '  United States.')
+
 //Final message
-alert('You got ' + counter + ' out of 5 correct answers! ' + 'Thank you ' + userName + ' for visiting this page.');
+alert('You got ' + counter + ' out of 7 correct answers! ' + 'Thank you ' + userName + ' for visiting this page.');
