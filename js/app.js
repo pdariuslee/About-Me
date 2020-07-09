@@ -43,7 +43,9 @@ function doesDariusCook(){
 doesDariusCook();
 
 // refactoring to function
-function doesDariusLikeSushi(){
+function doesDariusLikeSushi(){ 
+
+  
   // ----- 2ND QUESTION -----
   var foodSushi = prompt('Q2: I don\'t like sushi?(y/n)');
   // add validation
