@@ -45,7 +45,7 @@ doesDariusCook();
 // refactoring to function
 function doesDariusLikeSushi(){ 
 
-  
+
   // ----- 2ND QUESTION -----
   var foodSushi = prompt('Q2: I don\'t like sushi?(y/n)');
   // add validation
@@ -68,26 +68,29 @@ function doesDariusLikeSushi(){
 
 doesDariusLikeSushi();
 
+// Refactoring to function
+function doesDariusLikeAdobo(){
+  // ----- 3RD QUESTION -----
+  var foodAdobo = prompt('Q3: I ❤️ Adobo?(y/n)');
+  // add validation
 
-// ----- 3RD QUESTION -----
-var foodAdobo = prompt('Q3: I ❤️ Adobo?(y/n)');
-// add validation
+  foodAdobo = foodAdobo.toLowerCase();
 
-foodAdobo = foodAdobo.toLowerCase();
+  if(foodAdobo === 'y' || foodAdobo === 'yes'){
+    alert('Correct!');
+    counter++;
+    // console.log('Q: I like adobo?');
+    // console.log('Answer: ' + foodAdobo + ' is Correct!');
+    // console.log('');
+  } else{
+    alert('Wrong!');
+    // console.log('Q: I like adobo?');
+    // console.log('Answer: ' + foodAdobo + ' is Wrong!');
+    // console.log('');
+  }
+};
 
-if(foodAdobo === 'y' || foodAdobo === 'yes'){
-  alert('Correct!');
-  counter++;
-  // console.log('Q: I like adobo?');
-  // console.log('Answer: ' + foodAdobo + ' is Correct!');
-  // console.log('');
-} else{
-  alert('Wrong!');
-  // console.log('Q: I like adobo?');
-  // console.log('Answer: ' + foodAdobo + ' is Wrong!');
-  // console.log('');
-}
-
+doesDariusLikeAdobo();
 
 
 // ----- 4TH QUESTION -----
