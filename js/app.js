@@ -1,10 +1,15 @@
 'user strict'
 
-var userName = prompt('Hello! What\'s your name?');
+// refactored to function
+function welcome(){
+  var userName = prompt('Hello! What\'s your name?');
 
-alert('Welcome ' + userName + " to my \"About Me Page\"");
+  alert('Welcome ' + userName + " to my \"About Me Page\"");
 
-alert("Let's see how much you know about me");
+  alert("Let's see how much you know about me");
+};
+
+welcome();
 
 // -------------------------------- NOTES -------------------------------------
 // prompt user with 5 yes or no questions
@@ -13,46 +18,53 @@ alert("Let's see how much you know about me");
 
 var counter = 0;
 
-// ----- 1ST QUESTION -----
-var cookAnswer = prompt('Q1: I like to cook food?(y/n)');
-// add validation
+// refactoring to function
+function doesDariusCook(){
+  // ----- 1ST QUESTION -----
+  var cookAnswer = prompt('Q1: I like to cook food?(y/n)');
+  // add validation
 
-cookAnswer = cookAnswer.toLowerCase();
+  cookAnswer = cookAnswer.toLowerCase();
 
-if(cookAnswer === 'y' || cookAnswer === 'yes'){
-  alert('Correct!');
-  counter++;
-  // console.log('Q: like to cook food?');
-  // console.log('Answer: ' + cookAnswer + ' is Correct!');
-  // console.log('');
-} else{
-  alert('Wrong!');
-  // console.log('Q: like to cook food?');
-  // console.log('Answer: ' + cookAnswer + ' is Wrong!');
-  // console.log('');
-}
+  if(cookAnswer === 'y' || cookAnswer === 'yes'){
+    alert('Correct!');
+    counter++;
+    // console.log('Q: like to cook food?');
+    // console.log('Answer: ' + cookAnswer + ' is Correct!');
+    // console.log('');
+  } else{
+    alert('Wrong!');
+    // console.log('Q: like to cook food?');
+    // console.log('Answer: ' + cookAnswer + ' is Wrong!');
+    // console.log('');
+  }
+};
 
+doesDariusCook();
 
+// refactoring to function
+function doesDariusLikeSushi(){
+  // ----- 2ND QUESTION -----
+  var foodSushi = prompt('Q2: I don\'t like sushi?(y/n)');
+  // add validation
 
-// ----- 2ND QUESTION -----
-var foodSushi = prompt('Q2: I don\'t like sushi?(y/n)');
-// add validation
+  foodSushi = foodSushi.toLowerCase();
 
-foodSushi = foodSushi.toLowerCase();
+  if(foodSushi === 'n' || foodSushi === 'no'){
+    alert('Correct!');
+    counter++;
+    // console.log('Q: I don\'t like sushi?');
+    // console.log('Answer: ' + foodSushi + ' is Correct!');
+    // console.log('');
+  } else{
+    alert('Wrong!');
+    // console.log('Q: I don\'t like sushi?');
+    // console.log('Answer: ' + foodSushi + ' is Wrong!');
+    // console.log('');
+  }
+};
 
-if(foodSushi === 'n' || foodSushi === 'no'){
-  alert('Correct!');
-  counter++;
-  // console.log('Q: I don\'t like sushi?');
-  // console.log('Answer: ' + foodSushi + ' is Correct!');
-  // console.log('');
-} else{
-  alert('Wrong!');
-  // console.log('Q: I don\'t like sushi?');
-  // console.log('Answer: ' + foodSushi + ' is Wrong!');
-  // console.log('');
-}
-
+doesDariusLikeSushi();
 
 
 // ----- 3RD QUESTION -----
