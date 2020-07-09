@@ -92,26 +92,29 @@ function doesDariusLikeAdobo(){
 
 doesDariusLikeAdobo();
 
+// Refactoring to function
+function hasDariusBeenToJapan() {
+  // ----- 4TH QUESTION -----
+  var placeJapan = prompt('Q4: I\'ve never been to Japan?(y/n)');
+  // add validation
 
-// ----- 4TH QUESTION -----
-var placeJapan = prompt('Q4: I\'ve never been to Japan?(y/n)');
-// add validation
+  placeJapan = placeJapan.toLowerCase();
 
-placeJapan = placeJapan.toLowerCase();
+  if(placeJapan === 'n' || placeJapan === 'no'){
+    alert('Correct!');
+    counter++;
+    // console.log('Q: I\'ve never been to Japan?');
+    // console.log('Answer: ' + placeJapan + ' is Correct!');
+    // console.log('');
+  } else{
+    alert('Wrong!');
+    // console.log('Q: I\'ve never been to Japan?');
+    // console.log('Answer: ' + placeJapan + ' is Wrong!');
+    // console.log('');
+  }
+};
 
-if(placeJapan === 'n' || placeJapan === 'no'){
-  alert('Correct!');
-  counter++;
-  // console.log('Q: I\'ve never been to Japan?');
-  // console.log('Answer: ' + placeJapan + ' is Correct!');
-  // console.log('');
-} else{
-  alert('Wrong!');
-  // console.log('Q: I\'ve never been to Japan?');
-  // console.log('Answer: ' + placeJapan + ' is Wrong!');
-  // console.log('');
-}
-
+hasDariusBeenToJapan();
 
 
 // ----- 5TH QUESTION -----
