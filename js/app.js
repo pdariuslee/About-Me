@@ -140,25 +140,28 @@ function hasDariusSkydived(){
 
 hasDariusSkydived();
 
+// Refactoring to function
+function howManyCountriesVisited(){
+  // ----- 6TH QUESTION -----
+  var sixthAnswer = 0;
+  for(var triesLeft = 4; triesLeft != 0; triesLeft--){
+    sixthAnswer = prompt('Q6: Number of countries I have been so far?' + ' try left: ' + triesLeft);
+    if(sixthAnswer === 4 || sixthAnswer === '4'){
+      var triesLeft = 1;  
+      alert('Wow! You\'re amazing');
+      counter++;
+    } else if(sixthAnswer > 4){
+      alert('Wrong! It\'s Lower');
+    } else if(sixthAnswer < 4){
+      alert('Wrong! It\'s Higher');
+    }  
+  }
 
-// ----- 6TH QUESTION -----
-var sixthAnswer = 0;
-for(var triesLeft = 4; triesLeft != 0; triesLeft--){
-  sixthAnswer = prompt('Q6: Number of countries I have been so far?' + ' try left: ' + triesLeft);
-  if(sixthAnswer === 4 || sixthAnswer === '4'){
-    var triesLeft = 1;  
-    alert('Wow! You\'re amazing');
-    counter++;
-  } else if(sixthAnswer > 4){
-    alert('Wrong! It\'s Lower');
-  } else if(sixthAnswer < 4){
-    alert('Wrong! It\'s Higher');
-  }  
-}
+  // console.log('Number of countries I have been so far? Answer: 4');
+  alert('Correct answer is 4');
+};
 
-// console.log('Number of countries I have been so far? Answer: 4');
-alert('Correct answer is 4');
-
+howManyCountriesVisited();
 
 // ----- 7TH QUESTION -----
     var countriesIveBeen = ['philippines', 'japan', 'mexico', 'united states'];
