@@ -163,25 +163,30 @@ function howManyCountriesVisited(){
 
 howManyCountriesVisited();
 
-// ----- 7TH QUESTION -----
-    var countriesIveBeen = ['philippines', 'japan', 'mexico', 'united states'];
-    var triesLeft = 6;
-   
-    for(var attempt = 1; attempt <= 6; attempt++){
-        var answer = prompt('Q7: Been to 4 countries so far. Guess at least one! Tries left: ' + triesLeft).toLowerCase();
+// Refactoring to function
+function whatCountriesVisited(){
+  // ----- 7TH QUESTION -----
+  var countriesIveBeen = ['philippines', 'japan', 'mexico', 'united states'];
+  var triesLeft = 6;
+ 
+  for(var attempt = 1; attempt <= 6; attempt++){
+      var answer = prompt('Q7: Been to 4 countries so far. Guess at least one! Tries left: ' + triesLeft).toLowerCase();
 
-        if(answer === countriesIveBeen[0] || answer === countriesIveBeen[1] || answer === countriesIveBeen[2] || answer === countriesIveBeen[3]){
-            alert('Correct!');
-            counter++;
-            attempt = 6;
-        } else{
-            triesLeft--;
-            alert('try again! tries left: ' + triesLeft);
-        }
-    }
-   
-    // console.log('So far I have been to: Philippines,' + ' Japan,' + ' Mexico,' + '  United States.');
-    alert('So far I have been to: Philippines,' + ' Japan,' + ' Mexico,' + '  United States.')
+      if(answer === countriesIveBeen[0] || answer === countriesIveBeen[1] || answer === countriesIveBeen[2] || answer === countriesIveBeen[3]){
+          alert('Correct!');
+          counter++;
+          attempt = 6;
+      } else{
+          triesLeft--;
+          alert('try again! tries left: ' + triesLeft);
+      }
+  }
+ 
+  // console.log('So far I have been to: Philippines,' + ' Japan,' + ' Mexico,' + '  United States.');
+  alert('So far I have been to: Philippines,' + ' Japan,' + ' Mexico,' + '  United States.')
+};
+
+whatCountriesVisited();
 
 //Final message
 alert('You got ' + counter + ' out of 7 correct answers! ' + 'Thank you ' + userName + ' for visiting this page.');
