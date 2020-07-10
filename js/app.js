@@ -1,15 +1,18 @@
 'user strict'
 
 // refactored to function
+
+var userName = prompt('Hello! What\'s your name?');
+
 function welcome(){
-  var userName = prompt('Hello! What\'s your name?');
+  
 
   alert('Welcome ' + userName + " to my \"About Me Page\"");
 
   alert("Let's see how much you know about me");
 };
 
-welcome();
+
 
 // -------------------------------- NOTES -------------------------------------
 // prompt user with 5 yes or no questions
@@ -40,7 +43,7 @@ function doesDariusCook(){
   }
 };
 
-doesDariusCook();
+
 
 // refactoring to function
 function doesDariusLikeSushi(){ 
@@ -66,7 +69,7 @@ function doesDariusLikeSushi(){
   }
 };
 
-doesDariusLikeSushi();
+
 
 // Refactoring to function
 function doesDariusLikeAdobo(){
@@ -90,7 +93,7 @@ function doesDariusLikeAdobo(){
   }
 };
 
-doesDariusLikeAdobo();
+
 
 // Refactoring to function
 function hasDariusBeenToJapan(){
@@ -114,7 +117,7 @@ function hasDariusBeenToJapan(){
   }
 };
 
-hasDariusBeenToJapan();
+
 
 // Refactoring to function
 function hasDariusSkydived(){
@@ -138,7 +141,7 @@ function hasDariusSkydived(){
   }
 };
 
-hasDariusSkydived();
+
 
 // Refactoring to function
 function howManyCountriesVisited(){
@@ -161,7 +164,7 @@ function howManyCountriesVisited(){
   alert('Correct answer is 4');
 };
 
-howManyCountriesVisited();
+
 
 // Refactoring to function
 function whatCountriesVisited(){
@@ -186,7 +189,22 @@ function whatCountriesVisited(){
   alert('So far I have been to: Philippines,' + ' Japan,' + ' Mexico,' + '  United States.')
 };
 
-whatCountriesVisited();
+
+
 
 //Final message
-alert('You got ' + counter + ' out of 7 correct answers! ' + 'Thank you ' + userName + ' for visiting this page.');
+//Refactoring to function
+function finalMessage(){
+    alert('You got ' + counter + ' out of 7 correct answers! ' + 'Thank you ' + userName + ' for visiting this page.');
+};
+
+
+welcome();
+doesDariusCook();
+doesDariusLikeSushi();
+doesDariusLikeAdobo();
+hasDariusBeenToJapan();
+hasDariusSkydived();
+howManyCountriesVisited();
+whatCountriesVisited();
+finalMessage();
