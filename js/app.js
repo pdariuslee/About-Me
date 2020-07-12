@@ -6,7 +6,6 @@ var userName = prompt('Hello! What\'s your name?');
 
 function welcome(){
   
-
   alert('Welcome ' + userName + " to my \"About Me Page\"");
 
   alert("Let's see how much you know about me");
@@ -23,23 +22,21 @@ var counter = 0;
 
 // refactoring to function
 function doesDariusCook(){
+
   // ----- 1ST QUESTION -----
   var cookAnswer = prompt('Q1: I like to cook food?(y/n)');
-  // add validation
 
   cookAnswer = cookAnswer.toLowerCase();
 
   if(cookAnswer === 'y' || cookAnswer === 'yes'){
+
     alert('Correct!');
     counter++;
-    // console.log('Q: like to cook food?');
-    // console.log('Answer: ' + cookAnswer + ' is Correct!');
-    // console.log('');
+    
   } else{
+
     alert('Wrong!');
-    // console.log('Q: like to cook food?');
-    // console.log('Answer: ' + cookAnswer + ' is Wrong!');
-    // console.log('');
+    
   }
 };
 
@@ -56,16 +53,14 @@ function doesDariusLikeSushi(){
   foodSushi = foodSushi.toLowerCase();
 
   if(foodSushi === 'n' || foodSushi === 'no'){
+
     alert('Correct!');
     counter++;
-    // console.log('Q: I don\'t like sushi?');
-    // console.log('Answer: ' + foodSushi + ' is Correct!');
-    // console.log('');
+  
   } else{
+
     alert('Wrong!');
-    // console.log('Q: I don\'t like sushi?');
-    // console.log('Answer: ' + foodSushi + ' is Wrong!');
-    // console.log('');
+  
   }
 };
 
@@ -80,16 +75,14 @@ function doesDariusLikeAdobo(){
   foodAdobo = foodAdobo.toLowerCase();
 
   if(foodAdobo === 'y' || foodAdobo === 'yes'){
+
     alert('Correct!');
     counter++;
-    // console.log('Q: I like adobo?');
-    // console.log('Answer: ' + foodAdobo + ' is Correct!');
-    // console.log('');
+    
   } else{
+
     alert('Wrong!');
-    // console.log('Q: I like adobo?');
-    // console.log('Answer: ' + foodAdobo + ' is Wrong!');
-    // console.log('');
+    
   }
 };
 
@@ -99,21 +92,18 @@ function doesDariusLikeAdobo(){
 function hasDariusBeenToJapan(){
   // ----- 4TH QUESTION -----
   var placeJapan = prompt('Q4: I\'ve never been to Japan?(y/n)');
-  // add validation
 
   placeJapan = placeJapan.toLowerCase();
 
   if(placeJapan === 'n' || placeJapan === 'no'){
+
     alert('Correct!');
     counter++;
-    // console.log('Q: I\'ve never been to Japan?');
-    // console.log('Answer: ' + placeJapan + ' is Correct!');
-    // console.log('');
+  
   } else{
+
     alert('Wrong!');
-    // console.log('Q: I\'ve never been to Japan?');
-    // console.log('Answer: ' + placeJapan + ' is Wrong!');
-    // console.log('');
+    
   }
 };
 
@@ -128,16 +118,14 @@ function hasDariusSkydived(){
   actSkyDive = actSkyDive.toLowerCase();
 
   if(actSkyDive === 'y' || actSkyDive === 'yes'){
+
     alert('Correct!');
     counter++;
-    // console.log('Q: Do you think I\'ve done skydiving before?');
-    // console.log('Answer: ' + actSkyDive + ' is Correct!');
-    // console.log('');
+ 
   } else{
+    
     alert('Wrong!');
-    // console.log('Q: Do you think I\'ve done skydiving before?');
-    // console.log('Answer: ' + actSkyDive + ' is Wrong!');
-    // console.log('');
+    
   }
 };
 
